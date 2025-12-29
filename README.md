@@ -1,10 +1,21 @@
-# 🛎️ Hotel Bellhop Logistics Optimizer (Chicago-Style)
+# 🛎️ Hotel Bellhop Logistics Optimizer
 
 ### 📋 Descripción
 
 Este proyecto surge de una necesidad real en la operación hotelera. Durante la entrega masiva de amenidades o regalos para grupos, la logística manual (en papel) solía ser ineficiente y desequilibrada.
 
 Este script en Python automatiza la clasificación de habitaciones por **zonas geográficas (Norte, Sur y Pisos Altos)** y distribuye la carga de trabajo de forma equitativa entre los Bellboys disponibles, optimizando los desplazamientos y reduciendo el tiempo de entrega.
+
+### 🛏️ Números de Habitación y Jerarquía de Pisos
+
+* **Los números de habitación:** Están conformados por 4 digitos (ejemplo: `1405`).
+* **La jerarquía de los pisos:** Del piso mas bajo al mas alto queda de la siguiente manera: P, L, M, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Para reconocer de manera inmediata a que piso corresponde cada habitación existe un patrón.
+* **Piso P:** Habitaciones iniciadas con `11`.
+* **Piso L:** Habitaciones iniciadas con `12`.
+* **Piso M:** Habitaciones iniciadas con `14`.
+* **Lógica pisos superiores:** A partir del piso `1` en adelante, el primer dígito indica el piso.
 
 ### 🏨 Lógica del Hotel (Estructura de Pantalón)
 
